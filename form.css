@@ -1,0 +1,190 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(109, 119, 104, 0.774);
+        }
+
+        h2 {
+            font-size: 50px;
+            color: rgb(121, 45, 45);
+            text-align: left;
+            margin: 0 0 30px 0;
+        }
+
+        fieldset {
+            border: 2px solid #2f6f4e;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+            background-color: rgb(240, 240, 238);
+        }
+
+        legend {
+            color: #2f6f4e;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: rgb(51, 51, 51);
+            font-size: 18px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="file"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: white;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        input[type="date"]:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #2f6f4e;
+            box-shadow: 0 0 5px rgba(47, 111, 78, 0.3);
+        }
+
+        input[type="color"] {
+            width: 60px;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        input[type="submit"],
+        input[type="reset"]{
+            padding: 15px 40px;
+            border: none;
+            border-radius: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(109, 119, 104, 0.3);
+        }
+
+        input[type="submit"] {
+            background-color: #2f6f4e;
+            color: rgb(234, 244, 211);
+            flex: 1;
+            min-width: 150px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0b4f24;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(109, 119, 104, 0.4);
+        }
+
+        input[type="reset"] {
+            background-color: rgb(121, 45, 45);
+            color: white;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #8b2f2f;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(121, 45, 45, 0.4);
+        }
+
+        .readonly-field {
+            background-color: #f4f6f5;
+        }
+
+        .disabled-field {
+            opacity: 0.6;
+            cursor: not-allowed;
+            background-color: #e0e0e0;
+        }
+
+        small {
+            display: block;
+            color: #666;
+            margin-bottom: 10px;
+            margin-top: -10px;
+            font-size: 14px;
+            font-weight: normal;
+        }
